@@ -1,5 +1,8 @@
 package com.ct_common;
 
+import com.ct_common.api.Column;
+import com.ct_common.api.RowKey;
+import com.ct_common.api.TableRef;
 import com.ct_common.constant.Names;
 import com.ct_common.constant.ValueConstant;
 import org.apache.hadoop.conf.Configuration;
@@ -8,6 +11,7 @@ import org.apache.hadoop.hbase.client.*;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import java.io.IOException;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -151,6 +155,51 @@ public abstract class BaseHBaseDao {
         int crc = Math.abs(userCodeHash ^ yearMonthHash);
         //取模
         return crc % ValueConstant.REGION_COUNT;
+    }
+
+    /**
+     * 增加对象：自动封装数据，将对象数据直接保存到hbase中去
+     *
+     * @param obj
+     * @throws IOException
+     */
+    protected void putData(Object obj) throws IOException, IllegalAccessException {
+        //反射
+        Class clazz = obj.getClass();
+        //拿到注解
+        TableRef tableRef = (TableRef) clazz.getAnnotation(TableRef.class);
+        String tableName = tableRef.value();//拿到表名
+        Field[] fields = clazz.getDeclaredFields();
+        String stringRowKey = "";
+        for (Field field : fields) {
+            RowKey rowKey = field.getAnnotation(RowKey.class);
+            if (rowKey != null) {
+                field.setAccessible(true);
+                stringRowKey = (String) field.get(obj);
+                break;
+            }
+        }
+        //获取表对象
+        Connection conn = getConnect();
+        Table table = conn.getTable(TableName.valueOf(tableName));
+        Put put = new Put(Bytes.toBytes(stringRowKey));
+        for (Field field : fields) {
+            Column column = field.getAnnotation(Column.class);
+            if (column != null) {
+                String family = column.family();
+                String colName = column.column();
+                if (colName == null || "".equals(colName)) {
+                    colName = field.getName();
+                }
+                field.setAccessible(true);
+                String value = (String) field.get(obj);
+                put.addColumn(Bytes.toBytes(family), Bytes.toBytes(colName), Bytes.toBytes(value));
+            }
+        }
+        //增加数据
+        table.put(put);
+        //关闭表
+        table.close();
     }
 
     protected void putData(String value, Put put) throws IOException {

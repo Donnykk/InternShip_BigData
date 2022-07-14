@@ -10,45 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7de9d05-4b3f-4220-8e83-4703ccec3e7a" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ct_producer_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/call.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/BaseHBaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/api/Column.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/api/RowKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/api/TableRef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/bean/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/bean/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/bean/DataIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/bean/DataOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/bean/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/bean/Val.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/constant/Names.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/constant/ValueConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/util/DateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/util/NumberUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/resources/hbase-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_common/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/BootStrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/bean/CallLogConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/bean/HBaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_consumer/src/main/resources/consumer.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_producer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_producer/src/main/java/com/ct_producer/Bootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_producer/src/main/java/com/ct_producer/bean/CallLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_producer/src/main/java/com/ct_producer/bean/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_producer/src/main/java/com/ct_producer/bean/LocalFileProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_producer/src/main/java/com/ct_producer/io/LocalFileDataIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ct_producer/src/main/java/com/ct_producer/io/LocalFileDataOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/bean/CallLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/BaseHBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/BaseHBaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/bean/CallLogConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/bean/CallLogConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/bean/HBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/bean/HBaseDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +26,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>

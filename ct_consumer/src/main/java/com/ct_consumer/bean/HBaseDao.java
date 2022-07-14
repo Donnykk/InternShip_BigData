@@ -53,4 +53,16 @@ public class HBaseDao extends BaseHBaseDao {
         //3.保存数据
         putData(Names.TABLE.getValue(), put);
     }
+
+    /**
+     * 插入对象
+     *
+     * @param log
+     * @throws IOException
+     */
+    public void insertData(CallLog log) throws IOException, IllegalAccessException {
+        log.setRowKey(genRegionNum(log.getCall1(), log.getCalltime()) + "_" + log.getCall1() + "_"
+                + log.getCalltime() + "_" + log.getCall2() + "_" + log.getDuration());
+        putData(log);
+    }
 }
