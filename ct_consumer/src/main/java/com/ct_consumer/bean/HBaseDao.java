@@ -14,7 +14,11 @@ public class HBaseDao extends BaseHBaseDao {
     public void init() throws IOException {
         start();
         createNamespaceNX(Names.NAMESPACE.getValue());
-        createTableTX(Names.TABLE.getValue(), ValueConstant.REGION_COUNT, Names.CF_CALLER.getValue(), Names.CF_CALLEE.getValue());
+        createTableTX(Names.TABLE.getValue(),
+                "com.ct_consumer.coprocessor.InsertCalleeCoprocessor",
+                ValueConstant.REGION_COUNT,
+                Names.CF_CALLER.getValue(),
+                Names.CF_CALLEE.getValue());
         end();
     }
 

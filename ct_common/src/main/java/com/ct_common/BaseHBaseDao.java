@@ -62,7 +62,7 @@ public abstract class BaseHBaseDao {
      * @param families
      */
     protected void createTableXX(String name, String... families) throws IOException {
-        createTableTX(name, null, families);
+        createTableTX(name, null, null, families);
     }
 
     /**
@@ -73,7 +73,7 @@ public abstract class BaseHBaseDao {
      * @param families
      * @throws IOException
      */
-    protected void createTableTX(String name, Integer regionCount, String... families) throws IOException {
+    protected void createTableTX(String name, String coprocessorClass, Integer regionCount, String... families) throws IOException {
         Admin admin = getAdmin();
         TableName tableName = TableName.valueOf(name);
         if (admin.tableExists(tableName)) {
@@ -81,7 +81,7 @@ public abstract class BaseHBaseDao {
             deleteTable(name);
         }
         //创建表
-        createTable(name, regionCount, families);
+        createTable(name, coprocessorClass, regionCount, families);
     }
 
     /**
@@ -92,7 +92,7 @@ public abstract class BaseHBaseDao {
      * @param families
      * @throws IOException
      */
-    private void createTable(String name, Integer regionCount, String... families) throws IOException {
+    private void createTable(String name, String coprocessorClass, Integer regionCount, String... families) throws IOException {
         Admin admin = getAdmin();
         TableName tableName = TableName.valueOf(name);
         //表的描述器
@@ -106,6 +106,10 @@ public abstract class BaseHBaseDao {
             //列的描述器
             HColumnDescriptor hColumnDescriptor = new HColumnDescriptor(family);
             hTableDescriptor.addFamily(hColumnDescriptor);
+        }
+        //协处理器
+        if (coprocessorClass != null && !"".equals(coprocessorClass)) {
+            hTableDescriptor.addCoprocessor(coprocessorClass);
         }
         //增加预分区
         //分区键
