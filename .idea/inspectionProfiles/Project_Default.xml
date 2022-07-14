@@ -1,0 +1,15 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="MavenPackageUpdate" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="excludeList">
+        <list>
+          <option value="org.apache.kafka:kafka-clients" />
+          <option value="org.apache.kafka:kafka_2.12" />
+          <option value="org.apache.hbase:hbase-client" />
+          <option value="org.apache.hbase:hbase-server" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
