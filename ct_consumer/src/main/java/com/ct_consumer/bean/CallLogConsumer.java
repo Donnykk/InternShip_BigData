@@ -32,8 +32,11 @@ public class CallLogConsumer implements Consumer {
                 ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
                 for (ConsumerRecord<String, String> record : records) {
                     System.out.println(record.value());
+                    hBaseDao.insertData(record.value());
+                    /*
                     CallLog log = new CallLog(record.value());
                     hBaseDao.insertData(log);
+                     */
                 }
             }
         } catch (Exception e) {

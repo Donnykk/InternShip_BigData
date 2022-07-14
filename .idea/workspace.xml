@@ -10,9 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7de9d05-4b3f-4220-8e83-4703ccec3e7a" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/bean/CallLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/BaseHBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ct_common/src/main/java/com/ct_common/BaseHBaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/bean/CallLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/bean/CallLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/bean/CallLogConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/bean/CallLogConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/bean/HBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ct_consumer/src/main/java/com/ct_consumer/bean/HBaseDao.java" afterDir="false" />
     </list>

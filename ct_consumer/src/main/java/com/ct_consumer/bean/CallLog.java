@@ -26,6 +26,9 @@ public class CallLog implements Serializable {
     @Column(family = "caller")
     private String duration;
 
+    @Column(family = "caller")
+    private String flag = "1"; //主叫被叫
+
     public CallLog() {
     }
 
@@ -75,5 +78,13 @@ public class CallLog implements Serializable {
 
     public void setDuration(String duration) {
         this.duration = duration;
+    }
+
+    public String getFlag() {
+        return flag;
+    }
+
+    public void setFlag(String flag) {
+        this.flag = flag;
     }
 }

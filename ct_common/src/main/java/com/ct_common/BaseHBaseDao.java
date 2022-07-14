@@ -5,6 +5,7 @@ import com.ct_common.api.RowKey;
 import com.ct_common.api.TableRef;
 import com.ct_common.constant.Names;
 import com.ct_common.constant.ValueConstant;
+import com.ct_common.util.DateUtil;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.*;
 import org.apache.hadoop.hbase.client.*;
@@ -13,6 +14,7 @@ import org.apache.hadoop.hbase.util.Bytes;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -211,6 +213,22 @@ public abstract class BaseHBaseDao {
     }
 
     /**
+     * 增加多条数据
+     *
+     * @param name
+     * @param puts
+     */
+    protected void putData(String name, List<Put> puts) throws IOException {
+        //获取表对象
+        Connection conn = getConnect();
+        Table table = conn.getTable(TableName.valueOf(name));
+        //增加数据
+        table.put(puts);
+        //关闭表
+        table.close();
+    }
+
+    /**
      * 删除表
      *
      * @param name
@@ -274,5 +292,40 @@ public abstract class BaseHBaseDao {
             connHolder.set(conn);
         }
         return conn;
+    }
+
+    /**
+     * 获取查询时startrow,stoprow集合
+     *
+     * @param tel
+     * @param start
+     * @param end
+     * @return
+     */
+    protected static List<String[]> getStartRowKeys(String tel, String start, String end) {
+        List<String[]> rowKeyss = new ArrayList<>();
+        String startTime = start.substring(0, 6);//开始时间
+        String endTime = end.substring(0, 6);//结束时间
+        //把日期转化成日历
+        Calendar startCal = Calendar.getInstance();
+        startCal.setTime(DateUtil.parse(startTime, "yyyyMM"));
+        Calendar endCal = Calendar.getInstance();
+        endCal.setTime(DateUtil.parse(endTime, "yyyyMM"));
+        while (startCal.getTimeInMillis() <= endCal.getTimeInMillis()) {//判断
+            //当前时间
+            String nowTime = DateUtil.format(startCal.getTime(), "yyyyMM");
+            int regionNum = genRegionNum(tel, nowTime);//获取分区号
+            //1_156_202203~1_156_202203|
+            String startRow = regionNum + "_" + tel + "_" + nowTime;
+            String stopRow = startRow + "|";
+            String[] rowKeys = {startRow, stopRow};
+            rowKeyss.add(rowKeys);
+            //月份+1
+            startCal.add(Calendar.MONTH, 1);
+        }
+        return rowKeyss;
+    }
+
+    public static void main(String[] args) {
     }
 }
