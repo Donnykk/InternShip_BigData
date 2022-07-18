@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6995b332-ed56-4eb8-a27b-fc8bbda5c11e" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/covid.csv" beforeDir="false" afterPath="$PROJECT_DIR$/covid.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nd/yq/Creeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nd/yq/Creeper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
