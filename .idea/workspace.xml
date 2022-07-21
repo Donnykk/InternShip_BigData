@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="yq_producer:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6995b332-ed56-4eb8-a27b-fc8bbda5c11e" name="变更" comment="">
+    <list default="true" id="7e36b2a2-bac1-4b4a-85a9-816be0e02f3f" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/covid.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nd/yq/Creeper.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,65 +26,177 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2C4R5qRA8kBXstlGSf8wBJenYjJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
+  <component name="ProjectId" id="2C3wB7n6U7Urdf6vCsQSDKS1kkV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "问题",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "1172064784bd4e277a5b58a7af83c486"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.nd.yq.Creeper" />
-      <module name="CovidCreeper" />
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\bigdata\yq_nd_project\yq_web\src\main\webapp" />
+      <recent name="F:\bigdata\yq_nd_project" />
+      <recent name="F:\bigdata\yq_nd_project\yq_common\src\main\resources" />
+      <recent name="F:\bigdata\yq_nd_project\yq_common" />
+      <recent name="F:\bigdata\yq_nd_project\yq_consumer\src\main\java\com\nd\yq\consumer\bean" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\bigdata\yq_nd_project" />
+      <recent name="F:\bigdata\yq_nd_project\yq_analysis\src\main\java\com\nd\yq\analysis\bymonth" />
+      <recent name="F:\bigdata\yq_nd_project\yq_analysis\src\main\java\hbaseutil" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.AnalysisData">
+    <configuration name="AnalysisData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nd.yq.analysis.AnalysisData" />
+      <module name="yq_analysis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nd.yq.analysis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bootstrap (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nd.yq.consumer.bean.consumer.Bootstrap" />
+      <module name="yq_consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nd.yq.consumer.bean.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bootstrap (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nd.yq.producer.Bootstrap" />
+      <module name="yq_producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nd.yq.producer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bootstrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nd.yq.consumer.Bootstrap" />
+      <module name="yq_consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nd.yq.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bootstrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nd.yq.producer.Bootstrap" />
+      <module name="yq_producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nd.yq.producer.bean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nd.yq.consumer.dao.test" />
+      <module name="yq_consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nd.yq.consumer.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="默认任务">
-      <changelist id="6995b332-ed56-4eb8-a27b-fc8bbda5c11e" name="变更" comment="" />
-      <created>1658059689366</created>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e36b2a2-bac1-4b4a-85a9-816be0e02f3f" name="Changes" comment="" />
+      <created>1658044440438</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1658059689366</updated>
+      <updated>1658044440438</updated>
+      <workItem from="1658044441611" duration="3359000" />
+      <workItem from="1658047939312" duration="35000" />
+      <workItem from="1658047992912" duration="14769000" />
+      <workItem from="1658067996051" duration="1577000" />
+      <workItem from="1658069596434" duration="951000" />
+      <workItem from="1658114674033" duration="9972000" />
+      <workItem from="1658130497216" duration="7326000" />
+      <workItem from="1658194169806" duration="5824000" />
+      <workItem from="1658200271294" duration="5119000" />
+      <workItem from="1658207540666" duration="376000" />
+      <workItem from="1658208114899" duration="4673000" />
+      <workItem from="1658239697860" duration="3940000" />
+      <workItem from="1658281696128" duration="25687000" />
+      <workItem from="1658367846983" duration="582000" />
     </task>
     <servers />
   </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.net.ConnectException" package="java.net" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

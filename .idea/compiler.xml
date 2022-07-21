@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="yq_web" />
+        <module name="yq_analysis" />
+        <module name="yq_consumer" />
+        <module name="yq_producer" />
+        <module name="yq_common" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

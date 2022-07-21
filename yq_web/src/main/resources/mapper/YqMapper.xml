@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nd.dao.YqDao">
+    <select id="findData" resultType="YqDataDay">
+        select d.province,d.date,d.sumConfirmed,d.sumSuspected,d.sumCured,d.sumDead,d.tdConfirmed,d.incConfirmed,d.incCured,d.incDead
+        from tb_sumup_byday d
+        where d.province=#{province} and d.date6=#{month}
+    </select>
+    <select id="findDatam" resultType="YqDataMonth">
+        select m.province,m.date,m.sumConfirmed,m.sumSuspected,m.sumCured,m.sumDead,m.tdConfirmed,m.incConfirmed,m.incCured,m.incDead
+        from tb_sumup_bymonth m
+        where m.province=#{province}
+    </select>
+    <select id="findDataAll" resultType="YqDataDayAll">
+        select d.date,d.sumConfirmed,d.sumSuspected,d.sumCured,d.sumDead,d.tdConfirmed,d.incConfirmed,d.incCured,d.incDead
+        from tb_sumup_byday d
+        where d.province="中国" and d.date6=#{month}
+    </select>
+    <select id="findDatamAll" resultType="YqDataMonthAll">
+        select m.date,m.sumConfirmed,m.sumSuspected,m.sumCured,m.sumDead,m.tdConfirmed,m.incConfirmed,m.incCured,m.incDead
+        from tb_sumup_bymonth m
+        where m.province="中国"
+    </select>
+    <select id="findQueryInfo" resultType="QueryInfo">
+        select distinct d.province,d.date6
+        from tb_sumup_byday d
+        where d.province=#{province} and d.date6=#{month}
+    </select>
+    <select id="findDatamThis" resultType="YqDataMonth">
+        select m.province,m.date,m.sumConfirmed,m.sumSuspected,m.sumCured,m.sumDead,m.tdConfirmed,m.incConfirmed,m.incCured,m.incDead
+        from tb_sumup_bymonth m
+        where m.province=#{province} and m.date=#{month}
+    </select>
+</mapper>
