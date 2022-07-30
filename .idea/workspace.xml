@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7e36b2a2-bac1-4b4a-85a9-816be0e02f3f" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yq_common/src/main/java/com/nd/yq/common/bean/BaseHBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/yq_common/src/main/java/com/nd/yq/common/bean/BaseHBaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yq_producer/src/main/java/com/nd/yq/producer/bean/YqDataProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/yq_producer/src/main/java/com/nd/yq/producer/bean/YqDataProducer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +181,7 @@
       <workItem from="1658480772464" duration="54000" />
       <workItem from="1658487314823" duration="8000" />
       <workItem from="1658627942353" duration="741000" />
+      <workItem from="1659177903198" duration="1057000" />
     </task>
     <servers />
   </component>
