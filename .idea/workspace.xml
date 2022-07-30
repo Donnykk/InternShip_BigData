@@ -10,13 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e36b2a2-bac1-4b4a-85a9-816be0e02f3f" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/covid.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nd/yq/Creeper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yq_common/src/main/java/com/nd/yq/common/bean/BaseHBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/yq_common/src/main/java/com/nd/yq/common/bean/BaseHBaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yq_producer/src/main/java/com/nd/yq/producer/bean/YqDataProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/yq_producer/src/main/java/com/nd/yq/producer/bean/YqDataProducer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,16 +49,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "问题",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "1172064784bd4e277a5b58a7af83c486"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;问题&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;1172064784bd4e277a5b58a7af83c486&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\bigdata\yq_nd_project\yq_web\src\main\webapp" />
@@ -179,6 +176,13 @@
       <workItem from="1658239697860" duration="3940000" />
       <workItem from="1658281696128" duration="25687000" />
       <workItem from="1658367846983" duration="582000" />
+      <workItem from="1658368450948" duration="323000" />
+      <workItem from="1658386574452" duration="63000" />
+      <workItem from="1658403800116" duration="145000" />
+      <workItem from="1658406003454" duration="823000" />
+      <workItem from="1658480772464" duration="54000" />
+      <workItem from="1658487314823" duration="8000" />
+      <workItem from="1658627942353" duration="741000" />
     </task>
     <servers />
   </component>

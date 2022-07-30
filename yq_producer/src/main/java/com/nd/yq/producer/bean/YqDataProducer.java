@@ -54,11 +54,28 @@ public class YqDataProducer implements Producer {
         } catch (IOException | ParseException | InterruptedException e) {
             e.printStackTrace();
         }
-        //记得flush，要不输出不完
         writer.flush();
         writer.close();
         br.close();
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @Override
     public void setOutPath(String path) {

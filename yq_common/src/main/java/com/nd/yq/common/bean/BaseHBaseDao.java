@@ -2,6 +2,7 @@ package com.nd.yq.common.bean;
 
 
 import com.nd.yq.common.constact.Names;
+import javafx.scene.control.Tab;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.*;
 import org.apache.hadoop.hbase.client.*;
